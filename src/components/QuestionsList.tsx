@@ -94,9 +94,6 @@ const QuestionsList: React.FC<QuestionsListProps> = ({
                 onSave={(data) => handleSave(question.id, data)}
                 showSaveButton={true}
                 onDeleteQuestion={() => onDeleteQuestion(question.id)}
-                onDuplicateQuestion={() =>
-                  onDuplicateQuestion(question.id, question)
-                }
               />
             ) : (
               <Card

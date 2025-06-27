@@ -114,14 +114,12 @@ interface MatrixBuilderProps {
   initialData?: Question | null;
   showSaveButton?: boolean;
   onDeleteQuestion: () => void;
-  onDuplicateQuestion: (question: Question) => void;
 }
 
 const MatrixBuilder: React.FC<MatrixBuilderProps> = ({
   onSave,
   initialData,
   onDeleteQuestion,
-  onDuplicateQuestion,
 }) => {
   const [state, dispatch] = useReducer(matrixReducer, initialState);
   const [newRowText, setNewRowText] = useState("");

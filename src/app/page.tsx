@@ -11,6 +11,7 @@ interface Question {
   rows: string[];
   columns: string[];
   isMultipleChoice: boolean;
+  isSingleChoice: boolean;
   isRequired: boolean;
   responses: { [key: string]: string[] };
   isNew: boolean;
@@ -25,6 +26,7 @@ export default function Home() {
       rows: ["الصف 1"],
       columns: ["العمود 1"],
       isMultipleChoice: false,
+      isSingleChoice: false,
       isRequired: false,
       isNew: true,
       responses: {},
