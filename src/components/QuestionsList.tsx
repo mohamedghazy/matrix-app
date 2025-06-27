@@ -13,6 +13,7 @@ interface Question {
   rows: string[];
   columns: string[];
   isMultipleChoice: boolean;
+  isSingleChoice: boolean;
   isRequired: boolean;
   responses: { [key: string]: string[] };
   isNew: boolean;
